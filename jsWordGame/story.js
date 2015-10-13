@@ -1,6 +1,12 @@
-var name = prompt("What is your name?");
-var age = prompt("What is your age?");
-var money = prompt("How much money do you have on you?");
+var questions = 3;
+var questionsLeft = '[' + questions + ' questions left]';
+var name = prompt("What is your name?" + questionsLeft);
+questions -= 1;
+questionsLeft = '[' + questions + ' questions left]';
+var age = prompt("What is your age?" + questionsLeft);
+questions -= 1;
+questionsLeft = '[' + questions + ' question left]';
+var money = prompt("How much money do you have on you?" + questionsLeft);
 
 alert("Thank you for your input, now your results are on the way.");
 
